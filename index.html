@@ -17,6 +17,13 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
       rel="stylesheet"
     />
+    <script>
+      window.onload = function () {
+        if (window.location.hash) {
+          window.location.href = window.location.href.split("#")[0];
+        }
+      };
+    </script>
   </head>
   <body>
     <!-- Start Header -->
@@ -204,7 +211,7 @@
     </div>
     <!-- End About -->
     <!-- Start Contact -->
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="container">
         <h2 class="special-heading">Contact</h2>
         <p>We are born to create</p>
